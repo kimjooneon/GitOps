@@ -9,7 +9,11 @@ pipeline {
     }      
     stage('git pull') {
       steps {
+<<<<<<< HEAD
         // https://github.com/kimjooneon/GitOps.git will replace by sed command before RUN
+=======
+        // https://github.com/kimjooneon/GitOps will replace by sed command before RUN
+>>>>>>> 708bc15b4b24ba30855f735bb930b3c9e48a0c09
         git url: 'https://github.com/kimjooneon/GitOps.git', branch: 'main'
       }
     }
